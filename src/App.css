@@ -1,0 +1,729 @@
+.App {
+  overflow: hidden;
+}
+
+
+.menu {
+  background: #081C28;
+  position: fixed;
+  width: 184px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  bottom:0;
+}
+
+.icon{
+  position: fixed;
+  color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+  left: 20px;
+  top: 23px;
+  mix-blend-mode: normal;
+  opacity: 0.55;
+ }
+
+.power-plant{
+  position:fixed;
+  left: 20px;
+  top: 64px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+/* identical to box height, or 133% */
+   color: rgba(255, 255, 255, 0.85);
+}
+
+.menu-nav{
+  position: absolute;
+  top:88px;
+  width: 184px;
+  height: 40px;
+  padding: 8px 29px 12px 20px;
+  background: #2A3B46;
+  box-shadow: inset 0px -1px 0px #081C28;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.asset{
+  position: absolute;
+  width: 184px;
+  height: 20px;
+  left: 0px;
+  top: 112px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 5px;
+  /* identical to box height, or 143% */
+  color: rgba(255, 255, 255, 0.85);
+  }
+  
+
+#new{
+position: absolute;
+width: 27px;
+height: 20px;
+left: calc(50% - 27px/2 + 58.5px);
+top: calc(50% - 20px/2 - 2px);
+font-family: Titillium Web;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+text-align: right;
+
+color: rgba(255, 255, 255, 0.85);
+}
+
+ul.menu-list{
+  list-style: none;
+  position: absolute;
+  top:110px;
+  display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+
+li.menu-list-items{
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  width:184px;
+  height:88px;
+  left: 0;
+  margin:0;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.85);
+  background: #122531;
+}
+
+.activeMenu{
+  background: #1D303B;
+}
+
+.star{
+  width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 24px solid transparent;
+	border-top: 24px solid #081C28;
+}
+
+.fa{
+  position: absolute;
+  top:2px;
+  width:10px;
+  height:9.51px;
+  }
+
+.heading{
+    padding: 0px 28px auto 20px;
+    padding-left: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 5px;
+    }
+
+    ul.breadcrumbMenu {
+      padding: 0;
+      list-style: none;
+      display: inline;
+    }
+    ul.breadcrumbMenu li {
+      display: inline;
+      font-size: 12px;
+    }
+    ul.breadcrumbMenu li+li:before {
+      padding: 8px;
+      color: rgba(255, 255, 255, 0.55);
+      content: "/\00a0";
+    }
+    ul.breadcrumbMenu li a {
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+    }
+    ul.breadcrumbMenu li a:hover {
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: underline;
+    }
+    
+
+.text{
+      padding-top: 20px;
+      padding-left: 10px;
+      font-family: 'Titillium Web', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 5px;
+      }
+
+      .dot{
+        height: 10px;
+        width: 10px;
+        background-color: #288FEE;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .flag{
+        margin-left: 132px;
+        right: 8px;
+        top: 56px;
+        width:45px;
+        background: rgba(8, 28, 40, 0.5);
+        border-radius: 4px;
+      }
+
+      #red{
+        color: red;
+      }
+
+      .po{
+      font-family: 'Titillium Web', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: right;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.85);
+      }
+
+
+
+
+
+/* header css starts */
+
+.header{
+  background: #1D303B;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.04), inset 1px 0px 0px #081C28;
+  position: relative;
+  width: 100%;
+  height: 152px;
+  left: 184px;
+  top: 0px;
+}
+
+ul.breadcrumb {
+  padding: 16px auto auto 20px;
+  list-style: none;
+  display: inline;
+  background-color: #1D303B ;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 13px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.55);
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: underline;
+}
+
+ul.right-list {
+  padding: 16px  20px;
+  margin-left: 800px;
+  list-style: none;
+  display: inline;
+  background-color: #1D303B ;
+}
+
+ul.right-list li {
+  padding-right:20px;
+  display: inline;
+  font-size: 20px;
+}
+
+ul.right-list li a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+
+.title{
+  display: inline;
+}
+
+
+
+.webasto{
+position: absolute;
+height: 40px;
+left:20px;
+top: 48px;
+font-family: 'Titillium Web', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+letter-spacing: -0.0941176px;
+color: rgba(255, 255, 255, 0.85);
+}
+
+.select-bar{
+  position:absolute;
+  top:56px;
+  right:210px
+}
+
+#components{
+color: rgba(255, 255, 255, 0.85);
+padding: 8px 52px 12px 12px;
+font-family: 'Titillium Web', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), #2A3B46;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.08), inset 0px 1px 0px rgba(255, 255, 255, 0.08);
+}
+
+.header-nav {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.header-nav a {
+  float: left;
+  color: rgba(246, 246, 249, 0.85);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  
+}
+
+.header-nav a:hover {
+  color: black;
+}
+
+.header-nav a.active {
+  background: rgba(0, 0, 0, 0.0001);
+box-shadow: inset 0px -2px 0px #FFFFFF;
+}
+
+
+/* content css starts */
+
+
+.content{
+  position: relative;
+  width: 100%;
+  min-height: 1500px;
+  overflow: hidden;
+  left: 184px;
+  top: 0px;
+  background: #1D303B;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.04), inset 1px 0px 0px #081C28;
+  overflow: scroll;
+  }
+
+  .sensors{
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    left: 20px;
+    top: 16px;
+
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+  }
+
+  .component_failure{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 284px;
+    top: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+  }
+
+  .item1{
+    position: absolute;
+    width: 41px;
+    height: 20px;
+    left:20px;
+    top:44px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.55;
+  }
+
+  .item2{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 94px;
+    top: 44px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    color: #FFFFFF;
+  }
+
+  .box{
+    position: absolute;
+    width:1px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .item3{
+    position: absolute;
+    width: 104px;
+    height: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.55;
+  }
+
+  .chart-parent{
+    background: #122531;
+  }
+
+  .verticle-line{
+    position: absolute;
+    width: 1px;
+    top:189px;
+    left:290px;
+    height: 230px;
+    background: #384852;
+  }
+
+
+
+  .chart-header1{
+    position: absolute;
+    width: 83%;
+    height: 48px;
+    left: 20px;
+    top: 140px;
+    background: #2A3B46;
+  
+  }
+
+  .date{
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    top:12px;
+    left:12px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height, or 154% */
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.time{
+  position: absolute;
+  left: 764px;
+  top: 12px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height, or 154% */
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.time span+span:before{
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.55);
+  content: "\00a0";
+}
+  .chart-header2{
+    position: absolute;
+    width: 83%;
+    height: 48px;
+    left: 20px;
+    top: 189px;
+    background: rgba(0, 0, 0, 0.0001);
+    background: linear-gradient(180deg, rgba(31, 159, 188, 0.0001) 2.51%, rgba(31, 159, 188, 0.3) 98.47%);
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    box-shadow: inset 0px -1px 0px #2F9CFF;
+  }
+
+  .y-axis-value{
+    position: absolute;
+    top: 18px;
+    left:5px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.55;
+  }
+
+  .upper-threshold-image{
+    position: absolute;
+    left: 20px;
+    width: 90%;
+    height: 111px;
+  }
+
+  .upper{
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #16A0BD;
+  }
+
+  .lower{
+    position: absolute;
+    right:20px;
+    bottom:2px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #C48F0C;
+
+  }
+
+  .chart-header3{
+      position: absolute;
+      width: 83%;
+      height: 124px;
+      left: 20px;
+      top: 239px;
+      background: #122531;
+  }
+
+  .line{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 20px;
+    top: 39px;
+    border: 1px dashed #2A3B46;
+  }
+
+
+  .chart-header4{
+    position: absolute;
+    width: 83%;
+    height: 48px;
+    left: 20px;
+    top: 350px;
+    background: rgba(0, 0, 0, 0.0001);
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    border-top: 1px solid  #FFB200;
+    box-shadow: inset 0px -1px 0px #FFB200;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+
+  .lower-threshold-gradient{
+    position: absolute;
+    top: 10px;
+    width:100%;
+    background: linear-gradient(180deg, rgba(255, 178, 0, 0.3) 2.51%, rgba(255, 178, 0, 0.0001) 98.47%);
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.55;
+  }
+
+  .month{
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #FFFFFF;
+  }
+
+  .chart-header5{
+    position: absolute;
+    width: 83%;
+    height: 60px;
+    left: 20px;
+    top: 422px;
+    background: #081C28;
+    mix-blend-mode: normal;
+  }
+
+  .chart5-image{
+    width:100%;
+  }
+
+
+  /* table contents */
+
+.table-top{
+  position: absolute;
+  width: 83%;
+  height: 56px;
+  left: 20px;
+  top: 548px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #1D303B;
+  color: white;
+}
+
+.table-top th{
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: none;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  color: #B3BEC4;
+  padding: 12px 20px;
+}
+
+.table-top td{
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: none;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 143% */
+  color: #B3BEC4;
+  padding: 8px 20px;
+}
+
+.table-content{
+  position: absolute;
+  width: 83%;
+  height: 48px;
+  left: 20px;
+  top: 633px;
+  background: #2A3B46;
+}
+
+.table-content th{
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height, or 154% */
+  color: rgba(255, 255, 255, 0.85);
+  padding: 12px 20px;
+}
+
+
+.table-content td{
+  padding: 12px 20px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height, or 154% */
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+.table-content tr.content-table-row{
+  background: #1D303B;
+  height: 42px;
+  
+}
+
+.content-table-row:nth-child(2n+1){
+  box-shadow: inset 0px -1px 0px #384852;
+}
+
+input[type=checkbox] {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  appearance: checkbox;
+  outline: none;
+  background: #1D303B;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.checked{
+  height: 50px;
+  background: linear-gradient(0deg, rgba(0, 117, 185, 0.3), rgba(0, 117, 185, 0.3));
+  box-shadow: inset 0px 2px 0px #0075B9;
+  border-left: 1px solid #47C874;;
+}
+
+
+  
+
+
