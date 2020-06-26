@@ -719,8 +719,8 @@ input[type=checkbox] {
 .checked{
   height: 50px;
   background: linear-gradient(0deg, rgba(0, 117, 185, 0.3), rgba(0, 117, 185, 0.3));
-  box-shadow: inset 0px 2px 0px #0075B9;
-  border-left: 1px solid #47C874;;
+  box-shadow: inset 0px 1px 0px #0075B9;
+  border-left: 1px solid #0075B9;
 }
 
 
