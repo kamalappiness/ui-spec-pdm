@@ -1,33 +1,36 @@
 .App {
-  overflow: hidden;
+  position: relative;
+  width: 1020px;
+  height: 1640px;
+  background: #081C28;
 }
 
 
 .menu {
   background: #081C28;
-  position: fixed;
+  position: absolute;
   width: 184px;
-  height: 100%;
+  height: 1082px;
   left: 0px;
   top: 0px;
   bottom:0;
 }
 
 .icon{
-  position: fixed;
+  position: absolute;
   color: #FFFFFF;
   width: 24px;
   height: 24px;
   left: 20px;
-  top: 23px;
+  top: 20px;
   mix-blend-mode: normal;
   opacity: 0.55;
  }
 
 .power-plant{
-  position:fixed;
-  left: 20px;
-  top: 64px;
+  position:absolute;
+  left: calc(50% - 136px/2 - 4px);
+top: calc(50% - 24px/2 - 465px);
   font-family: 'Titillium Web', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -39,7 +42,8 @@
 
 .menu-nav{
   position: absolute;
-  top:88px;
+  top: 10.35%;
+  bottom: 85.95%;
   width: 184px;
   height: 40px;
   padding: 8px 29px 12px 20px;
@@ -48,51 +52,52 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-.asset{
+.new-to-review{
   position: absolute;
-  width: 184px;
+  width: 135px;
   height: 20px;
-  left: 0px;
-  top: 112px;
+  left: calc(50% - 135px/2 - 4.5px);
+  top: calc(50% - 20px/2 - 2px);
   font-family: 'Titillium Web', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 5px;
+  line-height: 20px;
+/* identical to box height, or 143% */
+
+
+color: rgba(255, 255, 255, 0.85);
+}
+
+.asset{
+  position: absolute;
+  width: 27px;
+  height: 20px;
+  left: calc(50% - 27px/2 + 58.5px);
+  top: calc(50% - 20px/2 - 2px);
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
   /* identical to box height, or 143% */
   color: rgba(255, 255, 255, 0.85);
   }
   
 
-#new{
-position: absolute;
-width: 27px;
-height: 20px;
-left: calc(50% - 27px/2 + 58.5px);
-top: calc(50% - 20px/2 - 2px);
-font-family: Titillium Web;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
-
-text-align: right;
-
-color: rgba(255, 255, 255, 0.85);
-}
-
 ul.menu-list{
   list-style: none;
   position: absolute;
-  top:110px;
+  left: 0%;
+  right: 0%;
+  top: 135px;
   display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
 }
 
 li.menu-list-items{
@@ -109,6 +114,15 @@ li.menu-list-items{
 }
 
 .activeMenu{
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  width:184px;
+  height:88px;
+  left: 0;
+  margin:0;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.85);
   background: #1D303B;
 }
 
@@ -212,14 +226,17 @@ li.menu-list-items{
 .header{
   background: #1D303B;
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.04), inset 1px 0px 0px #081C28;
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: 1165px;
   height: 152px;
   left: 184px;
   top: 0px;
 }
 
 ul.breadcrumb {
+  position: absolute;
+  top:5px;
+  left: 20px;
   padding: 16px auto auto 20px;
   list-style: none;
   display: inline;
@@ -244,6 +261,9 @@ ul.breadcrumb li a:hover {
 }
 
 ul.right-list {
+  position: absolute;
+  top: 5px;
+  right: 15px;
   padding: 16px  20px;
   margin-left: 800px;
   list-style: none;
@@ -271,7 +291,7 @@ ul.right-list li a {
 .webasto{
 position: absolute;
 height: 40px;
-left:20px;
+left:32px;
 top: 48px;
 font-family: 'Titillium Web', sans-serif;
 font-style: normal;
@@ -285,8 +305,8 @@ color: rgba(255, 255, 255, 0.85);
 
 .select-bar{
   position:absolute;
-  top:56px;
-  right:210px
+  top:60px;
+  right:20px
 }
 
 #components{
@@ -304,6 +324,7 @@ box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.08), in
 .header-nav {
   overflow: hidden;
   position: absolute;
+  left:15px;
   bottom: 0;
   width: 100%;
 }
@@ -336,15 +357,14 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
 
 .content{
-  position: relative;
-  width: 100%;
-  min-height: 1500px;
-  overflow: hidden;
+  position: absolute;
+  width: 1165px;
+  height: 1489px;
   left: 184px;
-  top: 0px;
+  top: 152px;
   background: #1D303B;
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.04), inset 1px 0px 0px #081C28;
-  overflow: scroll;
+  overflow: hidden;
   }
 
   .sensors{
@@ -453,9 +473,10 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
   .chart-header1{
     position: absolute;
-    width: 83%;
+    width: 95%;
     height: 48px;
     left: 20px;
+    right:20px;
     top: 140px;
     background: #2A3B46;
   
@@ -478,7 +499,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
 .time{
   position: absolute;
-  left: 764px;
+  left: 614px;
   top: 12px;
   font-family: 'Titillium Web', sans-serif;
   font-style: normal;
@@ -496,7 +517,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 }
   .chart-header2{
     position: absolute;
-    width: 83%;
+    width: 95%;
     height: 48px;
     left: 20px;
     top: 189px;
@@ -524,7 +545,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
   .upper-threshold-image{
     position: absolute;
     left: 20px;
-    width: 90%;
+    width: 95%;
     height: 111px;
   }
 
@@ -557,7 +578,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
   .chart-header3{
       position: absolute;
-      width: 83%;
+      width: 95%;
       height: 124px;
       left: 20px;
       top: 239px;
@@ -566,17 +587,18 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
   .line{
     position: absolute;
-    width: 100%;
+    width: 98%;
     height: 2px;
     left: 20px;
     top: 39px;
+    fill: none;
     border: 1px dashed #2A3B46;
   }
 
 
   .chart-header4{
     position: absolute;
-    width: 83%;
+    width: 95%;
     height: 48px;
     left: 20px;
     top: 350px;
@@ -615,7 +637,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
   .chart-header5{
     position: absolute;
-    width: 83%;
+    width: 95%;
     height: 60px;
     left: 20px;
     top: 422px;
@@ -627,12 +649,34 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
     width:100%;
   }
 
+.mask1{
+  position: absolute;
+  width: 652px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background: #081C28;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.mask2{
+  position: absolute;
+  width: 136px;
+  height: 60px;
+  left: 954px;
+  top: 0px;
+  background: #081C28;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
 
   /* table contents */
 
 .table-top{
   position: absolute;
-  width: 83%;
+  width: 95%;
   height: 56px;
   left: 20px;
   top: 548px;
@@ -664,7 +708,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
 .table-content{
   position: absolute;
-  width: 83%;
+  width: 95%;
   height: 48px;
   left: 20px;
   top: 633px;
@@ -706,7 +750,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 }
 
 input[type=checkbox] {
-  position: relative;
+  position: absolute;
   width: 16px;
   height: 16px;
   appearance: checkbox;

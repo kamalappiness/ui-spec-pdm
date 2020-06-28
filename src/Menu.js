@@ -9,7 +9,7 @@ class Menu extends React.Component{
             <div className="menu"> 
           <div className="icon"><FaHome/></div>
           <div className="power-plant">Power Plant</div> 
-          <div className="menu-nav">New For Review<span id="new">3</span></div>
+          <div className="menu-nav"><span className="new-to-review">New For Review</span><span className="asset">3</span></div>
           <ul className="menu-list">
           <li className="menu-list-items">
           <div>
@@ -25,7 +25,7 @@ class Menu extends React.Component{
             </div>
           </div>
           </li>
-          <li className="menu-list-items activeMenu">
+          <li className="activeMenu">
           <div>
             <div className="star"><FaStar className="fa"/></div>
             <div className="heading"><ul class="breadcrumbMenu">

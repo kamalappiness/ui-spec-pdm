@@ -1,9 +1,33 @@
 import React from 'react';
 import './App.css';
+import {
+  XYPlot,
+  XAxis,
+  YAxis,
+  HorizontalGridLines,
+  VerticalGridLines,
+  LineMarkSeries
+} from 'react-vis';
+
+
 
 class Contents extends React.Component {
+
+  getRandomData() {
+    const randomYData = [...new Array(50)].map(() =>
+      Math.round(Math.random() * 5 - 2)
+    );
+    return randomYData.map((val, idx) => {
+      return {x: idx, y: val};
+    });
+  }
   
   render(){
+
+    const firstData = this.getRandomData();
+    const secondData = this.getRandomData();
+    const thirdData = this.getRandomData();
+    const fourthData = this.getRandomData();
 
   return (
     <div>
@@ -42,8 +66,15 @@ class Contents extends React.Component {
             <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"28px"}}>85</div>
             <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"70px"}}>75</div>
               <div className="line"></div>
-              <div className="line" style={{position:"absolute", left:"20px",top:"80px"}}></div>
-            <img className="upper-threshold-image" src={require('./green.png')} />
+              <div className="line" style={{position:"absolute", left:"20px",top:"80px",display: 'flex', fill: 'none'}}></div>
+              <XYPlot width={1100} height={178} style={{display:'flex', fill:'none'}}> 
+          {/* <HorizontalGridLines /> */}
+          {/* <VerticalGridLines /> */}
+          {/* <XAxis title="X Axis" /> */}
+          {/* <YAxis title="Y Axis" /> */}
+          <LineMarkSeries className="first-series" data={firstData} lineStyle={{ stroke: "#47C874" }} markStyle={{ stroke: "none", fill: "none", width: "0px" }}
+            curve={"curveCatmullRom.alpha(0.2)"}/>
+        </XYPlot>
             </div>
             <div className="chart-header4">
               <div className="lower-threshold-gradient">70</div>
@@ -56,7 +87,24 @@ class Contents extends React.Component {
             </div>
             </div>
             <div className="chart-header5">
-            <img className="chart5-image" src={require('./bg.png')} />
+            <div className="month">
+            <span style={{position:"absolute", left:"288px",top:"45px", opacity: "0.5"}}>2015</span>
+            <span style={{position:"absolute", left:"673px",top:"45px"}}>2016</span>
+            <span style={{position:"absolute", left:"956px",top:"45px", opacity: "0.5"}}>2017</span>
+            </div>
+            <XYPlot width={1100} height={80} style={{display:'flex', fill:'none'}}> 
+            <LineMarkSeries className="first-series" data={secondData} lineStyle={{ stroke: "#47C874" }} markStyle={{ stroke: "none", fill: "none", width: "0px" }}
+            curve={"curveCatmullRom"}/>
+            <LineMarkSeries className="first-series" data={thirdData} lineStyle={{ stroke: "#026FB5" }} markStyle={{ stroke: "none", fill: "none", width: "0px" }}
+            curve={"curveCatmullRom"}/>
+            <LineMarkSeries className="first-series" data={fourthData} lineStyle={{ stroke: "#249A95" }} markStyle={{ stroke: "none", fill: "none", width: "0px" }}
+            curve={"curveCatmullRom"}/>
+            </XYPlot>
+            <div className="mask1"></div>
+            <div className="mask2"></div>            
+            <div className="verticle-line" style={{position:"absolute", left:"282px",top:"0px", height:'60px'}}/>
+            <div className="verticle-line" style={{position:"absolute", left:"652px",top:"0px", height:'60px'}}/>
+            <div className="verticle-line" style={{position:"absolute", left:"954px",top:"0px", height:'60px'}}/>
             </div>
             <div className="verticle-line"/>
             <div className="verticle-line"style={{position:"absolute", left:"588px",top:"189px"}}/>
