@@ -749,22 +749,41 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
   box-shadow: inset 0px -1px 0px #384852;
 }
 
-input[type=checkbox] {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  appearance: checkbox;
-  outline: none;
-  background: #1D303B;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-}
 
 .checked{
   height: 50px;
   background: linear-gradient(0deg, rgba(0, 117, 185, 0.3), rgba(0, 117, 185, 0.3));
   box-shadow: inset 0px 1px 0px #0075B9;
   border-left: 1px solid #0075B9;
+}
+
+.checkbox input{
+  position: absolute;
+  opacity:0;
+}
+
+.checkbox.overlay{
+  position:absolute;
+  left: 20px;
+  top: 10px;
+  height:16px;
+  width:16px;
+  background-color: rgb(14, 20, 24);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-sizing: border-box;
+}
+
+.checkbox.overlay.icon{
+  color: rgba(255, 255, 255, 0.85);
+  display: none;
+}
+
+.checkbox input:checked ~.overlay{
+  background-color: #1D303B;
+}
+
+.checkbox input:checked ~.overlay.icon{
+  display: block;
 }
 
 

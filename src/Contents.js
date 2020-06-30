@@ -24,7 +24,97 @@ class Contents extends React.Component {
   
   render(){
 
-    const firstData = this.getRandomData();
+    const firstData = [{x: 0, y: 85},
+                       {x: 1, y: 84.17},
+                       {x: 2, y: 85},
+                       {x: 3, y: 84.17},
+                       {x: 4, y: 83.34},
+                       {x: 5, y: 84.17},
+                       {x: 6, y: 82.51},
+                       {x: 7, y: 84.14},
+                       {x: 8, y: 83.34},
+                       {x: 9, y: 84.17},
+                       {x: 10, y: 83.34},
+                       {x: 11, y: 85},
+                       {x: 12, y: 84.17},
+                       {x: 13, y: 85},
+                       {x: 14, y: 83.34},
+                       {x: 15, y: 84.17},
+                       {x: 16, y: 82.51},
+                       {x: 17, y: 81.68},
+                       {x: 18, y: 82.51},
+                       {x: 19, y: 80.58},
+                       {x: 20, y: 80},
+                       {x: 21, y: 80.58},
+                       {x: 22, y: 79.17},
+                       {x: 23, y: 78.34},
+                       {x: 24, y: 79.17},
+                       {x: 25, y: 78.34},
+                       {x: 26, y: 77.51},
+                       {x: 27, y: 78.34},
+                       {x: 28, y: 77.51},
+                       {x: 29, y: 78.34},
+                       {x: 30, y: 80},
+                       {x: 31, y: 75},
+                       {x: 32, y: 77.51},
+                       {x: 33, y: 76.68},
+                       {x: 34, y: 77.51},
+                       {x: 35, y: 76.68},
+                       {x: 36, y: 77.51},
+                       {x: 37, y: 75.85},
+                       {x: 38, y: 76.68},
+                       {x: 39, y: 77.51},
+                       {x: 40, y: 77.51},
+                       {x: 41, y: 78.34},
+                       {x: 42, y: 77.51},
+                       {x: 43, y: 76.68},
+                       {x: 44, y: 75},
+                       {x: 45, y: 75.85},
+                       {x: 46, y: 75},
+                       {x: 47, y: 74.17},
+                       {x: 48, y: 73.34},
+                       {x: 49, y: 72.51},
+                       {x: 50, y: 72.51},
+                       {x: 51, y: 71.68},
+                       {x: 52, y: 70.85},
+                       {x: 53, y: 71.68},
+                       {x: 54, y: 70.85},
+                       {x: 55, y: 72.51},
+                       {x: 56, y: 71.68},
+                       {x: 57, y: 70},
+                       {x: 58, y: 72.51},
+                       {x: 59, y: 74.17},
+                       {x: 60, y: 73.34},
+                       {x: 61, y: 75},
+                       {x: 62, y: 74.17},
+                       {x: 63, y: 73.34},
+                       {x: 64, y: 72.51},
+                       {x: 65, y: 73.34},
+                       {x: 66, y: 79.17},
+                       {x: 67, y: 72.51},
+                       {x: 68, y: 70.85},
+                       {x: 69, y: 71.68},
+                       {x: 70, y: 70.85},
+                       {x: 71, y: 71.68},
+                       {x: 72, y: 70.85},
+                       {x: 73, y: 72.51},
+                       {x: 74, y: 73.34},
+                       {x: 75, y: 72.51},
+                       {x: 76, y: 73.34},
+                       {x: 77, y: 75.85},
+                       {x: 78, y: 74.17},
+                       {x: 79, y: 72.51},
+                       {x: 80, y: 73.34},
+                       {x: 81, y: 75},
+                       {x: 82, y: 76.68},
+                       {x: 83, y: 77.51},
+                       {x: 84, y: 78.34},
+                       {x: 85, y: 77.51},
+                       {x: 86, y: 76.68},
+                       {x: 87, y: 77.51},
+                       {x: 88, y: 76.68},
+                       {x: 89, y: 80},
+                      ]
     const secondData = this.getRandomData();
     const thirdData = this.getRandomData();
     const fourthData = this.getRandomData();
@@ -63,9 +153,11 @@ class Contents extends React.Component {
               <div className="upper">UPPER THRESHOLD</div>
             </div>
             <div className="chart-header3">
-            <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"28px"}}>85</div>
-            <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"70px"}}>75</div>
-              <div className="line"></div>
+            <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"10px"}}>85</div>
+            <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"42px"}}>80</div>
+            <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"78px"}}>75</div>
+              <div className="line" style={{position:"absolute", left:"20px",top:"52px",display: 'flex', fill: 'none'}}></div>
+              <div className="line" style={{position:"absolute", left:"20px",top:"18px",display: 'flex', fill: 'none'}}></div>
               <div className="line" style={{position:"absolute", left:"20px",top:"80px",display: 'flex', fill: 'none'}}></div>
               <XYPlot width={1100} height={178} style={{display:'flex', fill:'none'}}> 
           {/* <HorizontalGridLines /> */}
@@ -163,7 +255,25 @@ class Contents extends React.Component {
                   <td>No. in 7 Days</td>
                 </tr>
                 <tr className="content-table-row">
-                  <td rowspan="2"><input className="checkMark" type="checkbox"/></td>
+                  <td rowspan="2"><input className="checkMark" type="checkbox"/>
+                  {/* <label className="checkbox">
+                    <input className="checkMark" type="checkbox"/>
+                    <span className="overlay">
+                      <svg xmlns="http://www.w3.orh/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="current Color"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="icon">
+                        <polyline point="20 6 9 17 4 12"/>
+                        </svg>
+                        </span>
+                        </label> */}
+                    </td>
                   <td >1</td>
                   <td>Static Pressure at pump outlet</td>
                   <td></td>
