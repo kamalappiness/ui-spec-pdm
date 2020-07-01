@@ -142,8 +142,9 @@ li.menu-list-items{
   }
 
 .heading{
-    padding: 0px 28px auto 20px;
     padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family: 'Titillium Web', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -443,7 +444,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
   .item3{
     position: absolute;
-    width: 104px;
+    width: 154px;
     height: 20px;
     font-family: 'Titillium Web', sans-serif;
     font-style: normal;
@@ -498,9 +499,6 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 }
 
 .time{
-  position: absolute;
-  left: 614px;
-  top: 12px;
   font-family: 'Titillium Web', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -508,6 +506,9 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
   line-height: 20px;
   /* identical to box height, or 154% */
   color: rgba(255, 255, 255, 0.55);
+  float: right;
+  margin-right: 20px;
+  margin-top: 12px;
 }
 
 .time span+span:before{
@@ -521,10 +522,10 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
     height: 48px;
     left: 20px;
     top: 189px;
-    background: rgba(0, 0, 0, 0.0001);
-    background: linear-gradient(180deg, rgba(31, 159, 188, 0.0001) 2.51%, rgba(31, 159, 188, 0.3) 98.47%);
+    background: rgba(0, 0, 0, 0.1);
+    background: repeating-linear-gradient(-60deg, rgba(80, 121, 131, 0.0001) 0.01px, rgba(31, 159, 188, 0.3) 5px);
     mix-blend-mode: normal;
-    opacity: 0.75;
+    opacity: 0.55;
     box-shadow: inset 0px -1px 0px #2F9CFF;
   }
 
@@ -555,7 +556,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
     top: 6px;
     font-family: 'Titillium Web', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     line-height: 18px;
     text-align: center;
@@ -656,6 +657,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
   left: 0px;
   top: 0px;
   background: #081C28;
+  border-top: 1px solid #001521;
   mix-blend-mode: normal;
   opacity: 0.8;
 }
@@ -667,6 +669,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
   left: 954px;
   top: 0px;
   background: #081C28;
+  border-top: 1px solid #001521;
   mix-blend-mode: normal;
   opacity: 0.8;
 }
@@ -681,13 +684,13 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
   left: 20px;
   top: 548px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #1D303B;
-  color: white;
+  
 }
 
 .table-top th{
   font-family: 'Titillium Web', sans-serif;
   font-style: normal;
-  font-weight: none;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   /* identical to box height, or 143% */
@@ -702,7 +705,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
   font-size: 18px;
   line-height: 24px;
   /* identical to box height, or 143% */
-  color: #B3BEC4;
+  color: rgba(255, 255, 255, 0.85);
   padding: 8px 20px;
 }
 
@@ -742,6 +745,40 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 .table-content tr.content-table-row{
   background: #1D303B;
   height: 42px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.55);
+  
+}
+.table-content tr.content-table-row td.table-line{
+  background: #1D303B;
+  height: 42px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.85);
+  
+}
+
+.selected{
+  border-top: 1px solid #0075B9;
+  background: linear-gradient(0deg, rgba(0, 117, 185, 0.12), rgba(0, 117, 185, 0.12));
+box-shadow: inset 0px 1px 0px #0075B9;
+  
+}
+
+.selected2{
+  background: linear-gradient(0deg, rgba(0, 117, 185, 0.12), rgba(0, 117, 185, 0.12));
+box-shadow: inset 0px 1px 0px #0075B9;
   
 }
 
@@ -784,6 +821,47 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
 .checkbox input:checked ~.overlay.icon{
   display: block;
+}
+
+.left-slider{
+  position: absolute;
+  left: 669px;
+  top:472px;
+  color: white;
+}
+
+.right-slider{
+  position: absolute;
+  left: 971px;
+  top:472px;
+  color: white;
+}
+
+.bar1{
+    position: absolute;
+    width: 10px;
+    height: 16px;
+    left: 512px;
+    top: 106px;
+    background: rgba(0, 0, 0, 0.1);
+    background: repeating-linear-gradient(-60deg, rgba(80, 121, 131, 0.0001) 0.01px, rgba(31, 159, 188, 0.3) 5px);
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    box-shadow: inset 0px 1px 0px #2F9CFF;
+
+}
+
+.bar2{
+  position: absolute;
+    width: 10px;
+    height: 16px;
+    left: 20px;
+    top: 18px;
+    background: rgba(0, 0, 0, 0.1);
+    background: repeating-linear-gradient(-60deg, rgba(255, 178, 0, 0.3) 0.01px, rgba(255, 178, 0, 0.0001) 5px);
+    mix-blend-mode: normal;
+    opacity: 0.55;
+    box-shadow: inset 0px 1px 0px #FFB200;
 }
 
 

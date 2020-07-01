@@ -144,7 +144,7 @@ class Contents extends React.Component {
                 <span>1m</span>
                 <span>3m</span>
                 <span>6m</span>
-                <span style={{fontWeight:"bold"}}>1y</span>
+                <span style={{color: "#FFFFFF"}}>1y</span>
               </div>
             </div>
             <div className="chart-parent">
@@ -153,9 +153,9 @@ class Contents extends React.Component {
               <div className="upper">UPPER THRESHOLD</div>
             </div>
             <div className="chart-header3">
-            <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"10px"}}>85</div>
-            <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"42px"}}>80</div>
-            <div className="y-axis-value" style={{position:"absolute", left:"0px",top:"78px"}}>75</div>
+            <div className="y-axis-value" style={{position:"absolute",top:"10px"}}>85</div>
+            <div className="y-axis-value" style={{position:"absolute",top:"42px"}}>80</div>
+            <div className="y-axis-value" style={{position:"absolute",top:"78px"}}>75</div>
               <div className="line" style={{position:"absolute", left:"20px",top:"52px",display: 'flex', fill: 'none'}}></div>
               <div className="line" style={{position:"absolute", left:"20px",top:"18px",display: 'flex', fill: 'none'}}></div>
               <div className="line" style={{position:"absolute", left:"20px",top:"80px",display: 'flex', fill: 'none'}}></div>
@@ -179,10 +179,13 @@ class Contents extends React.Component {
             </div>
             </div>
             <div className="chart-header5">
+              
+            <div className="mask1"></div>
+            <div className="mask2"></div>
             <div className="month">
-            <span style={{position:"absolute", left:"288px",top:"45px", opacity: "0.5"}}>2015</span>
+            <span style={{position:"absolute", left:"288px",top:"45px", opacity: "0.55"}}>2015</span>
             <span style={{position:"absolute", left:"673px",top:"45px"}}>2016</span>
-            <span style={{position:"absolute", left:"956px",top:"45px", opacity: "0.5"}}>2017</span>
+            <span style={{position:"absolute", left:"956px",top:"45px", opacity: "0.55"}}>2017</span>
             </div>
             <XYPlot width={1100} height={80} style={{display:'flex', fill:'none'}}> 
             <LineMarkSeries className="first-series" data={secondData} lineStyle={{ stroke: "#47C874" }} markStyle={{ stroke: "none", fill: "none", width: "0px" }}
@@ -191,9 +194,7 @@ class Contents extends React.Component {
             curve={"curveCatmullRom"}/>
             <LineMarkSeries className="first-series" data={fourthData} lineStyle={{ stroke: "#249A95" }} markStyle={{ stroke: "none", fill: "none", width: "0px" }}
             curve={"curveCatmullRom"}/>
-            </XYPlot>
-            <div className="mask1"></div>
-            <div className="mask2"></div>            
+            </XYPlot>           
             <div className="verticle-line" style={{position:"absolute", left:"282px",top:"0px", height:'60px'}}/>
             <div className="verticle-line" style={{position:"absolute", left:"652px",top:"0px", height:'60px'}}/>
             <div className="verticle-line" style={{position:"absolute", left:"954px",top:"0px", height:'60px'}}/>
@@ -202,6 +203,8 @@ class Contents extends React.Component {
             <div className="verticle-line"style={{position:"absolute", left:"588px",top:"189px"}}/>
             <div className="verticle-line"style={{position:"absolute", left:"888px",top:"189px"}}/>
           </div>
+            <img className="left-slider" src={require('./left slider.png')} width="7px" height="14px"/>
+            <img className="right-slider" src={require('./left slider.png')} width="7px" height="14px"/> 
           <div>
             <table className="table-top">
               <thead>
@@ -254,8 +257,9 @@ class Contents extends React.Component {
                   <td>Time</td>
                   <td>No. in 7 Days</td>
                 </tr>
-                <tr className="content-table-row">
-                  <td rowspan="2"><input className="checkMark" type="checkbox"/>
+                <tr className="content-table-row selected" rowspan="2">
+                  
+                  <td rowspan="2"><input className="checkMark" type="checkbox" checked />
                   {/* <label className="checkbox">
                     <input className="checkMark" type="checkbox"/>
                     <span className="overlay">
@@ -274,97 +278,97 @@ class Contents extends React.Component {
                         </span>
                         </label> */}
                     </td>
-                  <td >1</td>
-                  <td>Static Pressure at pump outlet</td>
+                  <td className="table-line">1</td>
+                  <td className="table-line">Static Pressure at pump outlet</td>
+                  <td className="table-line"></td>
+                  <td className="table-line"><span className="bar1"/>107.0054</td>
+                  <td className="table-line"><span className="bar1"  style={{left:"679px", top:"106px"}}/>100.0000</td>
+                  <td className="table-line"><span className="bar1" style={{left:"805px", top:"106px"}}/>107.0054</td>
+                  <td className="table-line">813 mins</td>
+                </tr>
+                <tr className="content-table-row selected2">
                   <td></td>
-                  <td>107.0054</td>
-                  <td>100.0000</td>
-                  <td>107.0054</td>
-                  <td>813 min</td>
+                  <td>Pump 5 / Drivetrain</td>
+                  <td>bar</td>
+                  <td>'17 Jan 30, 8:44</td>
+                  <td><span className="bar2" style={{left:"679px", top:"148px"}}></span>69.4460</td>
+                  <td>'17 Jan 30, 8:44</td>
+                  <td></td>
+                </tr>
+                <tr className="content-table-row">
+                  <td rowspan="2"><input type="checkbox"/></td>
+                  <td className="table-line">2</td>
+                  <td className="table-line">Static Pressure at pump outlet</td>
+                  <td></td>
+                  <td className="table-line"><span className="bar1" style={{left:"512px", top:"192px"}}/>107.0054</td>
+                  <td className="table-line"><span className="bar1"  style={{left:"679px", top:"192px"}}/>100.0000</td>
+                  <td className="table-line"><span className="bar1" style={{left:"805px", top:"192px"}}/>107.0054</td>
+                  <td className="table-line">813 mins</td>
                 </tr>
                 <tr className="content-table-row">
                   <td></td>
                   <td>Pump 5 / Drivetrain</td>
                   <td>bar</td>
                   <td>'17 Jan 30,8:44</td>
-                  <td>69.4460</td>
-                  <td>'17 Jan 30,8:44</td>
-                  <td></td>
-                </tr>
-                <tr className="content-table-row checked ">
-                  <td rowspan="2"><input type="checkbox" checked /></td>
-                  <td >2</td>
-                  <td>Static Pressure at pump outlet</td>
-                  <td></td>
-                  <td>107.0054</td>
-                  <td>100.0000</td>
-                  <td>107.0054</td>
-                  <td>813 min</td>
-                </tr>
-                <tr className="content-table-row">
-                  <td></td>
-                  <td>Pump 5 / Drivetrain</td>
-                  <td>bar</td>
-                  <td>'17 Jan 30,8:44</td>
-                  <td>69.4460</td>
-                  <td>'17 Jan 30,8:44</td>
+                  <td><span className="bar2" style={{left:"679px", top:"236px"}}></span>69.4460</td>
+                  <td>'17 Jan 30, 8:44</td>
                   <td></td>
                 </tr>
                 <tr className="content-table-row">
                   <td rowspan="2"><input type="checkbox" /></td>
-                  <td >3</td>
-                  <td>Static Pressure at pump outlet</td>
+                  <td className="table-line">3</td>
+                  <td className="table-line">Static Pressure at pump outlet</td>
                   <td></td>
-                  <td>107.0054</td>
-                  <td>100.0000</td>
-                  <td>107.0054</td>
-                  <td>813 min</td>
+                  <td className="table-line"><span className="bar1"style={{left:"512px", top:"281px"}}/>107.0054</td>
+                  <td className="table-line"><span className="bar1"  style={{left:"679px", top:"281px"}}/>100.0000</td>
+                  <td className="table-line"><span className="bar1" style={{left:"805px", top:"281px"}}/>107.0054</td>
+                  <td className="table-line">813 mins</td>
                 </tr>
                 <tr className="content-table-row">
                   <td></td>
                   <td>Pump 5 / Drivetrain</td>
                   <td>bar</td>
-                  <td>'17 Jan 30,8:44</td>
-                  <td>69.4460</td>
-                  <td>'17 Jan 30,8:44</td>
+                  <td>'17 Jan 30, 8:44</td>
+                  <td><span className="bar2" style={{left:"679px", top:"324px"}}></span>69.4460</td>
+                  <td>'17 Jan 30, 8:44</td>
                   <td></td>
                 </tr>
                 <tr className="content-table-row">
-                  <td rowspan="2"><input type="checkbox"/></td>
-                  <td >4</td>
-                  <td>Static Pressure at pump outlet</td>
+                  <td rowspan="2"><input type="checkbox" /></td>
+                  <td className="table-line">4</td>
+                  <td className="table-line">Static Pressure at pump outlet</td>
                   <td></td>
-                  <td>107.0054</td>
-                  <td>100.0000</td>
-                  <td>107.0054</td>
-                  <td>813 min</td>
-                </tr>
-                <tr className="content-table-row">
-                  <td></td>
-                  <td>Pump 5 / Drivetrain</td>
-                  <td>bar</td>
-                  <td>'17 Jan 30,8:44</td>
-                  <td>69.4460</td>
-                  <td>'17 Jan 30,8:44</td>
-                  <td></td>
-                </tr>
-                <tr className="content-table-row">
-                  <td rowspan="2"><input type="checkbox"/></td>
-                  <td >5</td>
-                  <td>Static Pressure at pump outlet</td>
-                  <td></td>
-                  <td>107.0054</td>
-                  <td>100.0000</td>
-                  <td>107.0054</td>
-                  <td>813 min</td>
+                  <td className="table-line"><span className="bar1"style={{left:"512px", top:"370px"}}/>107.0054</td>
+                  <td className="table-line"><span className="bar1"  style={{left:"679px", top:"370px"}}/>100.0000</td>
+                  <td className="table-line"><span className="bar1" style={{left:"805px", top:"370px"}}/>107.0054</td>
+                  <td className="table-line">813 mins</td>
                 </tr>
                 <tr className="content-table-row">
                   <td></td>
                   <td>Pump 5 / Drivetrain</td>
                   <td>bar</td>
-                  <td>'17 Jan 30,8:44</td>
-                  <td>69.4460</td>
-                  <td>'17 Jan 30,8:44</td>
+                  <td>'17 Jan 30, 8:44</td>
+                  <td><span className="bar2" style={{left:"679px", top:"412px"}}></span>69.4460</td>
+                  <td>'17 Jan 30, 8:44</td>
+                  <td></td>
+                </tr>
+                <tr className="content-table-row">
+                  <td rowspan="2"><input type="checkbox" /></td>
+                  <td className="table-line">5</td>
+                  <td className="table-line">Static Pressure at pump outlet</td>
+                  <td></td>
+                  <td className="table-line"><span className="bar1"style={{left:"512px", top:"458px"}}/>107.0054</td>
+                  <td className="table-line"><span className="bar1"  style={{left:"679px", top:"458px"}}/>100.0000</td>
+                  <td className="table-line"><span className="bar1" style={{left:"805px", top:"458px"}}/>107.0054</td>
+                  <td className="table-line">813 mins</td>
+                </tr>
+                <tr className="content-table-row">
+                  <td></td>
+                  <td>Pump 5 / Drivetrain</td>
+                  <td>bar</td>
+                  <td>'17 Jan 30, 8:44</td>
+                  <td><span className="bar2" style={{left:"679px", top:"499px"}}></span>69.4460</td>
+                  <td>'17 Jan 30, 8:44</td>
                   <td></td>
                 </tr>
                   
