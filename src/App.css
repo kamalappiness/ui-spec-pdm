@@ -771,7 +771,7 @@ box-shadow: inset 0px -2px 0px #FFFFFF;
 
 .selected{
   border-top: 1px solid #0075B9;
-  background: linear-gradient(0deg, rgba(0, 117, 185, 0.12), rgba(0, 117, 185, 0.12));
+  background: linear-gradient(60deg, rgba(0, 117, 185, 0.5), rgba(0, 117, 185, 0.5));
 box-shadow: inset 0px 1px 0px #0075B9;
   
 }
@@ -794,15 +794,26 @@ box-shadow: inset 0px 1px 0px #0075B9;
   border-left: 1px solid #0075B9;
 }
 
-.checkbox input{
+.selected-line{
   position: absolute;
-  opacity:0;
+  left:12px;
+  top:132px;
+  width: 2px;
+  height: 16px;
+  background: #47C874;
+}
+
+.checkbox {
+  position: absolute;
+  opacity:0.5;
+  width: 16px;
+  height: 16px;
 }
 
 .checkbox.overlay{
   position:absolute;
-  left: 20px;
-  top: 10px;
+  left: 0px;
+  top: 0px;
   height:16px;
   width:16px;
   background-color: rgb(14, 20, 24);
@@ -821,6 +832,7 @@ box-shadow: inset 0px 1px 0px #0075B9;
 
 .checkbox input:checked ~.overlay.icon{
   display: block;
+  background-color: rgb(14, 20, 24);
 }
 
 .left-slider{

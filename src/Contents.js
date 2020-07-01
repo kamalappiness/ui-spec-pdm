@@ -259,14 +259,14 @@ class Contents extends React.Component {
                 </tr>
                 <tr className="content-table-row selected" rowspan="2">
                   
-                  <td rowspan="2"><input className="checkMark" type="checkbox" checked />
-                  {/* <label className="checkbox">
-                    <input className="checkMark" type="checkbox"/>
-                    <span className="overlay">
+                  <td rowspan="2">
+                    <span className="selected-line"/>
+                    <input type="checkbox" className="checkbox" checked/>
+                     <span className="overlay">
                       <svg xmlns="http://www.w3.orh/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="current Color"
                       stroke-width="2"
@@ -274,9 +274,8 @@ class Contents extends React.Component {
                       stroke-linejoin="round"
                       className="icon">
                         <polyline point="20 6 9 17 4 12"/>
-                        </svg>
+                        </svg> 
                         </span>
-                        </label> */}
                     </td>
                   <td className="table-line">1</td>
                   <td className="table-line">Static Pressure at pump outlet</td>
@@ -296,7 +295,23 @@ class Contents extends React.Component {
                   <td></td>
                 </tr>
                 <tr className="content-table-row">
-                  <td rowspan="2"><input type="checkbox"/></td>
+                  <td rowspan="2">
+                  <label className="checkbox"><input type="checkbox"/>
+                     <span className="overlay">
+                      <svg xmlns="http://www.w3.orh/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="current Color"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="icon">
+                        <polyline point="20 6 9 17 4 12"/>
+                        </svg> 
+                        </span>
+                        </label></td>
                   <td className="table-line">2</td>
                   <td className="table-line">Static Pressure at pump outlet</td>
                   <td></td>
@@ -315,7 +330,22 @@ class Contents extends React.Component {
                   <td></td>
                 </tr>
                 <tr className="content-table-row">
-                  <td rowspan="2"><input type="checkbox" /></td>
+                  <td rowspan="2"><label className="checkbox"><input type="checkbox"/>
+                     <span className="overlay">
+                      <svg xmlns="http://www.w3.orh/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="current Color"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="icon">
+                        <polyline point="20 6 9 17 4 12"/>
+                        </svg> 
+                        </span>
+                        </label></td>
                   <td className="table-line">3</td>
                   <td className="table-line">Static Pressure at pump outlet</td>
                   <td></td>
@@ -334,7 +364,22 @@ class Contents extends React.Component {
                   <td></td>
                 </tr>
                 <tr className="content-table-row">
-                  <td rowspan="2"><input type="checkbox" /></td>
+                  <td rowspan="2"><label className="checkbox"><input type="checkbox"/>
+                     <span className="overlay">
+                      <svg xmlns="http://www.w3.orh/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="current Color"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="icon">
+                        <polyline point="20 6 9 17 4 12"/>
+                        </svg> 
+                        </span>
+                        </label></td>
                   <td className="table-line">4</td>
                   <td className="table-line">Static Pressure at pump outlet</td>
                   <td></td>
@@ -353,7 +398,22 @@ class Contents extends React.Component {
                   <td></td>
                 </tr>
                 <tr className="content-table-row">
-                  <td rowspan="2"><input type="checkbox" /></td>
+                  <td rowspan="2"><label className="checkbox"><input type="checkbox"/>
+                     <span className="overlay">
+                      <svg xmlns="http://www.w3.orh/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="current Color"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="icon">
+                        <polyline point="20 6 9 17 4 12"/>
+                        </svg> 
+                        </span>
+                        </label></td>
                   <td className="table-line">5</td>
                   <td className="table-line">Static Pressure at pump outlet</td>
                   <td></td>

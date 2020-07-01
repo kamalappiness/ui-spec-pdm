@@ -16,7 +16,7 @@ class Header extends React.Component {
     <li><a href="#user"><FaUser/></a></li>
     </ul>
     <div className="title">
-      <div className="webasto">Webasto AirTop 2000</div>
+      <div className="webasto"><p>Webasto AirTop 2000</p></div>
       <div className="select-bar">
       <select name="components" id="components">
             <option value="component actions">Component Actions</option>
