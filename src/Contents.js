@@ -415,7 +415,7 @@ class Contents extends React.Component {
                         </span>
                         </label></td>
                   <td className="table-line">5</td>
-                  <td className="table-line">Static ressure at pump outlet</td>
+                  <td className="table-line">Static pressure at pump outlet</td>
                   <td></td>
                   <td className="table-line"><span className="bar1"style={{left:"512px", top:"458px"}}/>107.0054</td>
                   <td className="table-line"><span className="bar1"  style={{left:"679px", top:"458px"}}/>100.0000</td>
