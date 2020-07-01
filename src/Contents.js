@@ -126,12 +126,12 @@ class Contents extends React.Component {
           <div className="component_failure">Component failure modes:</div>
           <div className="item1">All(98)</div>
           <span className="box" style={{left:"77px",top:"46px"}}/>
-          <div className="item2">Recent Anomalies(5)</div>
-          <div className="item3" style={{left:"284px",top:"44px"}}>Bearing Failure(5)</div>
+          <div className="item2">Recent anomalies(5)</div>
+          <div className="item3" style={{left:"284px",top:"44px"}}>Bearing failure(5)</div>
           <span className="box" style={{left:"405px",top:"46px"}}/>
-          <div className="item3" style={{left:"422px",top:"44px"}}>Coolong Fluid(9)</div>
+          <div className="item3" style={{left:"422px",top:"44px"}}>Cooling fluid(9)</div>
           <span className="box" style={{left:"555px",top:"46px"}}/>
-          <div className="item3" style={{left:"573px",top:"44px"}}>Another Failure Mode(6)</div>
+          <div className="item3" style={{left:"573px",top:"44px"}}>Another failure mode(6)</div>
     
             <div className="chart-header1">
               <div className="date">2016 Jan 08 - 2017 Jan 08</div>
@@ -211,9 +211,9 @@ class Contents extends React.Component {
                 <tr>
                   <th>Priority</th>
                   <th>Condition</th>
-                  <th>Time To Failure</th>
+                  <th>Time to failure</th>
                   <th>Probability</th>
-                  <th>Time To Repair</th>
+                  <th>Time to repair</th>
                   <th></th>
                   <th></th>
                   </tr>
@@ -238,12 +238,12 @@ class Contents extends React.Component {
                 <tr>
                   <th>3/6</th>
                   <th>Rnk</th>
-                  <th>Sensor Name</th>
+                  <th>Sensor name</th>
                   <th></th>
-                  <th>Last Reading</th>
-                  <th>Upper Limit</th>
-                  <th>Last Anomaly</th>
-                  <th>Avg Duration</th>
+                  <th>Last reading</th>
+                  <th>Upper limit</th>
+                  <th>Last anomaly</th>
+                  <th>Avg duration</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -253,7 +253,7 @@ class Contents extends React.Component {
                   <td>Location</td>
                   <td>Units</td>
                   <td>Time</td>
-                  <td>Lower Limit</td>
+                  <td>Lower limit</td>
                   <td>Time</td>
                   <td>No. in 7 Days</td>
                 </tr>
@@ -278,7 +278,7 @@ class Contents extends React.Component {
                         </span>
                     </td>
                   <td className="table-line">1</td>
-                  <td className="table-line">Static Pressure at pump outlet</td>
+                  <td className="table-line">Static pressure at pump outlet</td>
                   <td className="table-line"></td>
                   <td className="table-line"><span className="bar1"/>107.0054</td>
                   <td className="table-line"><span className="bar1"  style={{left:"679px", top:"106px"}}/>100.0000</td>
@@ -313,7 +313,7 @@ class Contents extends React.Component {
                         </span>
                         </label></td>
                   <td className="table-line">2</td>
-                  <td className="table-line">Static Pressure at pump outlet</td>
+                  <td className="table-line">Static pressure at pump outlet</td>
                   <td></td>
                   <td className="table-line"><span className="bar1" style={{left:"512px", top:"192px"}}/>107.0054</td>
                   <td className="table-line"><span className="bar1"  style={{left:"679px", top:"192px"}}/>100.0000</td>
@@ -347,7 +347,7 @@ class Contents extends React.Component {
                         </span>
                         </label></td>
                   <td className="table-line">3</td>
-                  <td className="table-line">Static Pressure at pump outlet</td>
+                  <td className="table-line">Static pressure at pump outlet</td>
                   <td></td>
                   <td className="table-line"><span className="bar1"style={{left:"512px", top:"281px"}}/>107.0054</td>
                   <td className="table-line"><span className="bar1"  style={{left:"679px", top:"281px"}}/>100.0000</td>
@@ -381,7 +381,7 @@ class Contents extends React.Component {
                         </span>
                         </label></td>
                   <td className="table-line">4</td>
-                  <td className="table-line">Static Pressure at pump outlet</td>
+                  <td className="table-line">Static pressure at pump outlet</td>
                   <td></td>
                   <td className="table-line"><span className="bar1"style={{left:"512px", top:"370px"}}/>107.0054</td>
                   <td className="table-line"><span className="bar1"  style={{left:"679px", top:"370px"}}/>100.0000</td>
@@ -415,7 +415,7 @@ class Contents extends React.Component {
                         </span>
                         </label></td>
                   <td className="table-line">5</td>
-                  <td className="table-line">Static Pressure at pump outlet</td>
+                  <td className="table-line">Static ressure at pump outlet</td>
                   <td></td>
                   <td className="table-line"><span className="bar1"style={{left:"512px", top:"458px"}}/>107.0054</td>
                   <td className="table-line"><span className="bar1"  style={{left:"679px", top:"458px"}}/>100.0000</td>
