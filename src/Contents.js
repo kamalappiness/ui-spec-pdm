@@ -123,7 +123,7 @@ class Contents extends React.Component {
     <div>
         <div className="content">
           <div className="sensors">Sensors:</div>
-          <div className="component_failure">Component Failure Modes:</div>
+          <div className="component_failure">Component failure modes:</div>
           <div className="item1">All(98)</div>
           <span className="box" style={{left:"77px",top:"46px"}}/>
           <div className="item2">Recent Anomalies(5)</div>
